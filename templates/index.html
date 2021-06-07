@@ -1,0 +1,140 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Zharsuke</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'fontawsome/css/all.min.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+        <div class="container">
+          <a style="font-family: 'Permanent Marker', cursive;" class="navbar-brand" href="#">Zharsuke</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a style="font-family: 'Balsamiq Sans', cursive;" class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-family: 'Balsamiq Sans', cursive;" class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-family: 'Balsamiq Sans', cursive;" class="nav-link" href="#project">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-family: 'Balsamiq Sans', cursive;" class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-family: 'Balsamiq Sans', cursive;" class="nav-link" href="{% url 'blog' %}">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <section class="jumbotron text-center">
+        <img class="rounded-circle img-thumbnail" src="{% static 'img/avatar.jpg' %}" alt="Al Azhar Rizqi Rifai Firdaus" width="200">
+        <h3 style="font-family: 'Balsamiq Sans', cursive;" class="display-4">Al Azhar</h3>
+        <p style="font-family: 'Balsamiq Sans', cursive;" class="lead">Student</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L26.7,80C53.3,64,107,32,160,58.7C213.3,85,267,171,320,213.3C373.3,256,427,256,480,256C533.3,256,587,256,640,218.7C693.3,181,747,107,800,90.7C853.3,75,907,117,960,149.3C1013.3,181,1067,203,1120,181.3C1173.3,160,1227,96,1280,74.7C1333.3,53,1387,75,1413,85.3L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+        </section>
+        
+        <section id="About">
+            <div class="container text-center">
+                <i id="about" class="fas fa-user h1"></i>
+                <h3 style="font-family: 'Balsamiq Sans', cursive;"> About Me</h3> <br>
+                <div class="col">
+                    <p style="font-family: 'Balsamiq Sans', cursive;">Hai! Nama saya Al Azhar Rizqi Rifai Firdaus. Saya Lahir di Kota Surabaya tanggal 24 Agustus 2003.
+                      Saya siswa di SMKN 4 Malang jurusan rekayasa perangkat lunak dan 
+                      sedang praktek kerja industri di PT RetGoo Sentris Informa.
+                      Sekarang saya sedang menekuni beberapa bahasa pemrograman seperti python dan dart.
+                      Saya juga selalu mengalokasikan sisa uang jajan saya untuk berinvestasi di reksadana pasar uang
+                      untuk dana darurat saya, dan sedikit di saham.
+                    </p>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(222 184 135)" fill-opacity="1" d="M0,96L26.7,80C53.3,64,107,32,160,58.7C213.3,85,267,171,320,213.3C373.3,256,427,256,480,256C533.3,256,587,256,640,218.7C693.3,181,747,107,800,90.7C853.3,75,907,117,960,149.3C1013.3,181,1067,203,1120,181.3C1173.3,160,1227,96,1280,74.7C1333.3,53,1387,75,1413,85.3L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+        </section>
+
+        <section id="Project">
+            <div class="container text-center">
+                <i id="project" class="fas fa-tasks h1"></i>
+                <h3 style="font-family: 'Balsamiq Sans', cursive;">My Projects</h3> <br>
+                <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <img src="{% static 'img/note.svg' %}" class="card-img-top" alt="img" width="200" height="300">
+                        <div class="card-body">
+                          <h4 style="font-family: 'Balsamiq Sans', cursive;">My Notes</h4>
+                          <p style="font-family: 'Balsamiq Sans', cursive;" class="card-text">My Notes adalah applikasi mobile yang berfungsi sebagai catatan sederhana.
+                            Dimana user dapat membuat, membaca, mengubah, dan menghapus catatan.
+                          </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <img src="{% static 'img/web.svg' %}" class="card-img-top" alt="img" width="200" height="300">
+                        <div class="card-body">
+                          <h4 style="font-family: 'Balsamiq Sans', cursive;">My Kids</h4>
+                          <p style="font-family: 'Balsamiq Sans', cursive;" class="card-text">My Kids adalah website yang berfungsi sebagai pembuatan akta kelahiran.
+                            Dimana User dapat membuat, membaca akta yang telah dibuat.
+                          </p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L26.7,80C53.3,64,107,32,160,58.7C213.3,85,267,171,320,213.3C373.3,256,427,256,480,256C533.3,256,587,256,640,218.7C693.3,181,747,107,800,90.7C853.3,75,907,117,960,149.3C1013.3,181,1067,203,1120,181.3C1173.3,160,1227,96,1280,74.7C1333.3,53,1387,75,1413,85.3L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+        </section>
+
+        <section id="Contact">
+            <div class="container text-center">
+                <i id="contact" class="fas fa-address-card h1"></i>
+                <h3 style="font-family: 'Balsamiq Sans', cursive;">Contact Me</h3> <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5><i class="fab fa-whatsapp"> <a style="color: black; text-decoration: none; font-family: 'Balsamiq Sans', cursive;" class="link" href="http://wa.me/0895366608834">+62895366608834</a></i></h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h5><i class="fab fa-instagram"> <a style="color: black; text-decoration: none; font-family: 'Balsamiq Sans', cursive;" class="link" href="https://www.instagram.com/alazhar_/?igshid=1fbiiva34ynxu">@zharsuke</a></i></h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h5><i class="far fa-envelope"> <a style="color: black; text-decoration: none; font-family: 'Balsamiq Sans', cursive;" class="link" href="mailto:alazharisqi@gmail.com">alazharisqi@gmail.com</a></i></h5>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(222 184 135)" fill-opacity="1" d="M0,96L26.7,80C53.3,64,107,32,160,58.7C213.3,85,267,171,320,213.3C373.3,256,427,256,480,256C533.3,256,587,256,640,218.7C693.3,181,747,107,800,90.7C853.3,75,907,117,960,149.3C1013.3,181,1067,203,1120,181.3C1173.3,160,1227,96,1280,74.7C1333.3,53,1387,75,1413,85.3L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+        </section>
+
+        <section id="Footer">
+            <div class="container text-center font-weight-bold">
+            <p style="font-family: 'Balsamiq Sans', cursive;">by zharsuke <i class="far fa-copyright"></i> 2021</p>
+        </div>
+        </section>
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>

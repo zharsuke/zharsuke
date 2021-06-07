@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #693d3d;
+}
+
+.jumbotron {
+    padding-top: 2rem;
+    background-color: rgb(222 184 135);
+    margin-top: 55px;
+}
+
+#Project {
+    background-color: rgb(222 184 135);
+}
+#Footer{
+    background-color: rgb(222 184 135);
+    display: flex;
+}
