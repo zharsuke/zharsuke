@@ -30,9 +30,9 @@ SECRET_KEY = 'k5%-bxocd9u43*t+2(_+e5(^%#yq=v9eim&gvi6urqdx1jc7p+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [‘https://zharsuke.herokuapp.com',
-‘localhost’,
-‘127.0.0.1’]
+ALLOWED_HOSTS = ['https://zharsuke.herokuapp.com',
+'localhost',
+'127.0.0.1’]
 
 
 # Application definition
