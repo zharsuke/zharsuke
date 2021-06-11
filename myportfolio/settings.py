@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'k5%-bxocd9u43*t+2(_+e5(^%#yq=v9eim&gvi6urqdx1jc7p+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://zharsuke.herokuapp.com',
 'localhost',
