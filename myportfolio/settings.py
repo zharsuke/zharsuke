@@ -18,7 +18,9 @@ from decouple import config
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+#BASE_DIR = Path(__file__).resolve().parent.parent
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -30,9 +32,7 @@ SECRET_KEY = 'k5%-bxocd9u43*t+2(_+e5(^%#yq=v9eim&gvi6urqdx1jc7p+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://zharsuke.herokuapp.com',
-'localhost',
-'127.0.0.1']
+ALLOWED_HOSTS = ['https://zharsuke.herokuapp.com']
 
 
 # Application definition
