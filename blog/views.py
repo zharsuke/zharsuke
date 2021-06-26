@@ -6,7 +6,7 @@ from . models import *
 # Create your views here.
 
 def blog(request):
-    blog = Blog.objects.all()
+    blog = Blog.objects.all().order_by('-date_created')
     context = {'blog' : blog}
     return render(request, 'blog.html', context)
 

@@ -12,6 +12,9 @@ class Blog(models.Model):
     caption = models.TextField(null=True)
     date_created = models.DateField(auto_now_add=True)
 
+    class Meta:
+        ordering = ['-date_created',]
+
     def save(self, *args, **kwargs):
         super(Blog, self).save(*args, **kwargs)
         return self.id
