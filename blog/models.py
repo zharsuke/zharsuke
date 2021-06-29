@@ -8,7 +8,7 @@ from cloudinary.models import CloudinaryField
 class Blog(models.Model):
     id = models.AutoField(primary_key=True)
     image = CloudinaryField('image', null=True)
-    title = models.CharField(max_length=50, null=True)
+    title = models.CharField(max_length=100, null=True)
     caption = models.TextField(null=True)
     date_created = models.DateField(auto_now_add=True)
 
