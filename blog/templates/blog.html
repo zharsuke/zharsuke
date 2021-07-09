@@ -45,7 +45,7 @@
       <div class="row justify-content-center">
       <div class="col-md-6">
         <div style="background-color: transparent; border: transparent;" class="card">
-        <img style="border-radius: 5%;" src="{{ blog.image.url }}" class="card-img-top img-fluid" alt="img">
+        <img src="{{ blog.image.url }}" class="card-img-top img-fluid" alt="img">
         <div class="card-body">
         <h3><a style="color: black; font-family: 'Balsamiq Sans', cursive;" href="{% url 'post' id=blog.id %}"> {{ blog.title }} </a></h3>
         <p style="font-family: 'Balsamiq Sans', cursive;">{{ blog.date_created }}</p>
