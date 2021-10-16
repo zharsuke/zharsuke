@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,25 +10,68 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Zharsuke - MyCV</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'fontawsome/css/all.min.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
     <style>
         .navbar {
             background-color: #693d3d;
         }
+        .font {
+            font-family: 'Balsamiq Sans', cursive;
+        }
         .kiri {
-            background-color: aquamarine;
+            background-color: #693d3d;
         }
         .kanan {
-            background-color: cadetblue;
+            margin-top: 20px;
         }
         #CV {
-            margin-top: 75px;
+            margin-top: 55px;
+        }
+        .gambar {
+            margin-top: 10px;
+        }
+        .kotak {
+            background-color: #693d3d;
+            width: 80%;
+            border-radius: 0px 25px 25px 0px;
+            color: white;
+        }
+        .kotakk {
+            background-color: white;
+            width: 80%;
+            border-radius: 0px 25px 25px 0px;
+            color: black;
+        }
+        .about{
+            margin-top: 50px;
+        }
+        .pendidikan {
+            margin-top: 50px;
+        }
+        .garis  {
+            width: 25%;
+            background-color: rgb(73, 73, 73);
+        }
+        .gariss  {
+            width: 25%;
+            background-color: white;
+        }
+        .p {
+            margin-left: 5px;
+        }
+        .bar {
+            background-color: rgb(222 184 135);
         }
     </style>
   </head>
-  <body>
+  <body class="font">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
           <a style="font-family: 'Permanent Marker', cursive;" class="navbar-brand" href="#">Zharsuke</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,15 +99,188 @@
             <div class="row justify-content-center">
 
                 <!-- KIRI -->
-                <div class="col-4 kiri">
-                    <h1>wldfwgvber</h1>
+                <div class="col-md-4 kiri text-white">
+                    <section class="text-center gambar">
+                    <img class="rounded-circle img-thumbnail img-fluid" src="{% static 'img/avatar.jpg' %}" alt="Al Azhar Rizqi Rifai Firdaus">
+                </section>
+
+                <div class="pendidikan">
+                    <div class="kotakk">
+                        <h4 class="font p">DATA PRIBADI</h4>
+                    </div>
+                    <hr class="gariss">
+                    <h5>Nama Lengkap</h5>
+                    <p>AL AZHAR RIZQI RIFA'I FIRDAUS</p> <br>
+
+                    <h5>Tempat Tanggal Lahir</h5>
+                    <p>Surabaya, 24 Agustus 2003</p> <br>
+
+                    <h5>Kebangsaan</h5>
+                    <p>Indonesia</p>
+
+                    <div class="kotakk about">
+                        <h4 class="font p">KEAHLIAN</h4>
+                    </div>
+                    <hr class="gariss">
+                    <h5>TRADING</h5>
+                    <div class="progress">
+                        <div class="progress-bar bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> <br>
+                    <h5>QUALITY ASSURANCE</h5>
+                    <div class="progress">
+                        <div class="progress-bar bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> <br>
+                    <h5>PYTHON</h5>
+                    <div class="progress">
+                        <div class="progress-bar bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> <br>
+                    <h5>DART</h5>
+                    <div class="progress">
+                        <div class="progress-bar bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> <br>
+                    <h5>ADOBE PHOTOSHOP</h5>
+                    <div class="progress">
+                        <div class="progress-bar bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> <br>
+                    <h5>ADOBE ILLUSTRATOR</h5>
+                    <div class="progress">
+                        <div class="progress-bar bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <div class="kotakk about">
+                        <h4 class="font p">BAHASA</h4>
+                    </div>
+                    <hr class="gariss">
+                    <h5>INDONESIA</h5>
+                    <div class="progress">
+                        <div class="progress-bar bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> <br>
+                    <h5>INGGRIS</h5>
+                    <div class="progress">
+                        <div class="progress-bar bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <div class="kotakk about">
+                        <h4 class="font p">HOBI</h4>
+                    </div>
+                    <hr class="gariss">
+                    <ul>
+                        <li>
+                            <h5>Berenang</h5>
+                        </li>
+                        <li>
+                            <h5>Badminton</h5>
+                        </li>
+                        <li>
+                            <h5>Jogging</h5>
+                        </li>
+                    </ul>
+
+                    <div class="kotakk about">
+                        <h4 class="font p">LINK</h4>
+                    </div>
+                    <hr class="gariss">
+                    <h5>Website</h5>
+                    <p><a class="text-white" href="https://zharsuke.herokuapp.com/">https://zharsuke.herokuapp.com/</a></p> <br>
+                    <h5>Instagram</h5>
+                    <p><a class="text-white" href="https://www.instagram.com/zharsuke/">https://www.instagram.com/zharsuke/</a></p>
+
+                </div>
+
+                <br>
                 </div>
 
                 <!-- KANAN -->
-                <div class="col-8 kanan">
-                    <h1>pfwerrvfufv</h1>
-                </div>
+                <div class="col-md-8 kanan align-self-center">
+                    <div class="kotak">
+                        <h1 class="font p">AL AZHAR</h1>
+                    </div>
+                    
+                    <hr class="garis">
+                    <p>PELAJAR</p> <br>
+                    <p> <i class="fas fa-map-marker-alt"></i> Jl. Candi Agung IV No.10, Kota Malang</p>
+                    <p> <i class="fas fa-phone-alt"></i> +62895366608834</p>
+                    <p> <i class="fas fa-envelope"></i> alazharisqi@gmail.com</p>
 
+                    <div class="kotak about">
+                        <h3 class="font p">TENTANG SAYA</h3>
+                    </div>
+                    <hr class="garis">
+                    <p>Hai! Nama saya Al Azhar Rizqi Rifai Firdaus. Saya Lahir di Kota Surabaya tanggal 24 Agustus 2003.
+                         Saya siswa di SMKN 4 Malang jurusan rekayasa perangkat lunak. Sekarang saya sedang menekuni 
+                         beberapa bahasa pemrograman seperti 
+                         python dan dart. Saya selalu mengalokasikan sisa uang jajan saya untuk berinvestasi di reksadana 
+                         pendapatan tetap untuk membangun compound interest dan Saya juga melakukan aktivitas trading di 
+                         instrumen saham.</p>
+
+                    <div class="kotak pendidikan">
+                        <h3 class="font p">PENDIDKAN</h3>
+                    </div>
+                    <hr class="garis">
+                    <ul>
+                        <li>
+                            <h4>SDN BARENG 4</h4>
+                            <P>Kota Malang</P>
+                            <p>2016</p> <br>
+                        </li>
+                        <li>
+                            <h4>SMPN 12</h4>
+                            <P>Kota Malang</P>
+                            <p>2019</p> <br>
+                        </li>
+                        <li>
+                            <h4>SMKN 4</h4>
+                            <h5> REKAYASA PERANGKAT LUNAK</h5>
+                            <P>Kota Malang</P>
+                            <p>2022</p>
+                        </li>
+                    </ul>
+                    
+                    
+                    
+
+                    <div class="kotak pendidikan">
+                        <h3 class="font p">PENGALAMAN KERJA</h3>
+                    </div>
+                    <hr class="garis">
+                    <ul>
+                        <li>
+                            <h4>PT RETGOO SENTRIS INFORMA</h4>
+                            <h5> QUALITY ASSURANCE</h5>
+                            <P>Kota Malang</P>
+                            <p>Mar 2021 - Des 2021</p> <br>
+                        </li>
+                        <li>
+                            <h4>BISNIS KELUARGA</h4>
+                            <h5> KURIR PAKET</h5>
+                            <P>Kota Malang</P>
+                            <p>Nov 2020 - Des 2020</p> <br>
+                        </li>
+                    </ul>
+
+                    <div class="kotak pendidikan">
+                        <h3 class="font p">PROJECT</h3>
+                    </div>
+                    <hr class="garis">
+                    <ul>
+                        <li>
+                            <h4>My Notes</h4>
+                            <p>My Notes adalah applikasi mobile yang berfungsi sebagai catatan sederhana. 
+                                Dimana user dapat membuat, membaca, mengubah, dan menghapus catatan.</p> <br>
+                        </li>
+                        <li>
+                            <h4>My Kids</h4>
+                            <p>My Kids adalah website yang berfungsi sebagai pembuatan akta kelahiran. 
+                                Dimana user dapat membuat, membaca akta yang telah dibuat.</p> <br>
+                        </li>
+                        <li>
+                            <h4>My Kost</h4>
+                            <p>My Kost adalah website yang berisi informasi, detail kamar kost, dan profile 
+                                tentang bisnis kost orang tua saya.</p> <br>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
           </div>
       </section>
