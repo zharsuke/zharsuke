@@ -23,6 +23,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('mycv/', views.cv, name='cv'),
     path('blog/', include('blog.urls')),
 ]
 
