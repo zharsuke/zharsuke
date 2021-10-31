@@ -15,8 +15,18 @@
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'fontawsome/css/all.min.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+      .btn {
+        background-color: #693d3d;
+        width: 50%;
+        color: white;
+      }
+      .font {
+        font-family: 'Balsamiq Sans', cursive;
+      }
+    </style>
   </head>
-  <body style="background-color: rgb(222 184 135);">
+  <body class="font" style="background-color: rgb(222 184 135);">
 
 
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
@@ -50,8 +60,9 @@
         <div style="background-color: transparent; border: transparent;" class="card">
         <img src="{{ blog.image.url }}" class="card-img-top img-fluid" alt="img">
         <div class="card-body">
-        <h3><a style="color: black; font-family: 'Balsamiq Sans', cursive;" href="{% url 'post' id=blog.id %}"> {{ blog.title }} </a></h3>
+        <h3> {{ blog.title }} </h3>
         <p style="font-family: 'Balsamiq Sans', cursive;">{{ blog.date_created }}</p>
+        <a  class="btn" href="{% url 'post' id=blog.id %}">Read More</a>
         </div>
         </div>
         </div>
